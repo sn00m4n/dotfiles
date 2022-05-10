@@ -12,7 +12,7 @@ cd yay && makepkg -si
 cd -
 
 # Programming Languages
-yay -Sy --needed go gopls go-tools python jdk-openjdk jre-openjdk rustup nodejs
+yay -Sy --needed go gopls go-tools python jdk-openjdk jre-openjdk rustup nodejs npm
 
 # Rust
 cargo install wasm-pack
@@ -21,10 +21,13 @@ cargo install wasm-pack
 yay -Sy --needed gradle gradle-doc gradle-src
 
 # CLI tools
-yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck
+yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss
 
 # GUI Programms
-yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher schildichat-desktop-bin
+yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa
+
+# Messenger 
+yay -Sy --needed schildichat-desktop-bin telegram-desktop
 
 # IDEs
 yay -S --needed goland pycharm-professional intellij-idea-ultimate-edition code goland-jre intellij-idea-ultimate-edition-jre
