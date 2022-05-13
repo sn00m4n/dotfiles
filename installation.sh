@@ -26,6 +26,9 @@ yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texli
 # GUI Programms
 yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate
 
+# CAD
+yay -Sy --needed kicad kicad-library kicad-library-3d pcbdraw freecad
+
 # Messenger 
 yay -Sy --needed schildichat-desktop-bin telegram-desktop
 
