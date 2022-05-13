@@ -21,10 +21,10 @@ cargo install wasm-pack
 yay -Sy --needed gradle gradle-doc gradle-src
 
 # CLI tools
-yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss
+yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen
 
 # GUI Programms
-yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa
+yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate
 
 # Messenger 
 yay -Sy --needed schildichat-desktop-bin telegram-desktop
