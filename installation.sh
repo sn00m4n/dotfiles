@@ -20,11 +20,17 @@ cargo install wasm-pack
 # Java
 yay -Sy --needed gradle gradle-doc gradle-src
 
+# Libraries
+yay -Sy --needed fmt qt5-imageformats kimageformats kamera noto-fonts-cjk
+
 # CLI tools
-yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen
+yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx
 
 # GUI Programms
-yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate
+yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate inkscape kget ktorrent gwenview
+
+# FS tools
+yay -Sy --needed gparted dosfstools jfsutils f2fs-tools mtools gpart nilfs-utils xfsprogs udftools ntfs-3g reiserfsprogs exfatprogs btrfs-progs
 
 # CAD
 yay -Sy --needed kicad kicad-library kicad-library-3d pcbdraw freecad
