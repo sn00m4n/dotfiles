@@ -24,7 +24,7 @@ yay -Sy --needed gradle gradle-doc gradle-src
 yay -Sy --needed dlang
 
 # Libraries
-yay -Sy --needed fmt qt5-imageformats kimageformats kamera noto-fonts-cjk 
+yay -Sy --needed fmt qt5-imageformats kimageformats kamera noto-fonts-cjk mariadb-client
 
 # Screen capture
 yay -Sy --needed xdg-desktop-portal xdg-desktop-portal-kde obs-studio
@@ -33,7 +33,7 @@ yay -Sy --needed xdg-desktop-portal xdg-desktop-portal-kde obs-studio
 yay -Sy --needed gphoto2  
 
 # CLI tools
-yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx wireguard-tools traceroute unzip
+yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx wireguard-tools traceroute unzip cpanminus
 
 # GUI Programms
 yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate inkscape kget ktorrent gwenview krdc
