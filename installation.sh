@@ -33,10 +33,10 @@ yay -Sy --needed xdg-desktop-portal xdg-desktop-portal-kde obs-studio
 yay -Sy --needed gphoto2  
 
 # CLI tools
-yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx wireguard-tools traceroute unzip cpanminus
+yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx wireguard-tools traceroute unzip cpanminus dnsmasq
 
 # GUI Programms
-yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate inkscape kget ktorrent gwenview krdc
+yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate inkscape kget ktorrent gwenview krdc virt-manager qemu-desktop
 
 # Remote desktop
 yay -Sy --needed libvncserver libssh freerdp keditbookmarks
@@ -60,3 +60,12 @@ sudo localedef -i de_DE -f UTF-8 en_DE.UTF-8
 
 # change user shell to fish
 sudo chsh -s /usr/bin/fish omikron
+
+# Virt-Manager
+sudo systemctl enable libvirtd.service
+sudo usermod -a -G libvirt omikron
+echo "unix_sock_group = 'libvirt'" | sudo tee -a /etc/libvirt/libvirtd.conf
+echo "unix_sock_rw_perms = '0770'" | sudo tee -a /etc/libvirt/libvirtd.conf
+echo "user = \"omikron\"" | sudo tee -a /etc/libvirt/qemu.conf
+echo "group = \"omikron\"" | sudo tee -a /etc/libvirt/qemu.conf
+
