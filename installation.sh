@@ -12,7 +12,7 @@ cd yay && makepkg -si
 cd -
 
 # Programming Languages
-yay -Sy --needed go gopls go-tools python jdk-openjdk jre-openjdk rustup nodejs npm
+yay -Sy --needed go gopls go-tools jdk-openjdk jre-openjdk rustup nodejs npm
 
 # Rust
 cargo install wasm-pack
@@ -23,8 +23,11 @@ yay -Sy --needed gradle gradle-doc gradle-src
 # D
 yay -Sy --needed dlang
 
+# Python
+yay -Sy --needed python python-pip
+
 # Libraries
-yay -Sy --needed fmt qt5-imageformats kimageformats kamera noto-fonts-cjk mariadb-client
+yay -Sy --needed fmt qt5-imageformats kimageformats kamera noto-fonts-cjk mariadb-client nfs-utils
 
 # Screen capture
 yay -Sy --needed xdg-desktop-portal xdg-desktop-portal-kde obs-studio
@@ -33,10 +36,10 @@ yay -Sy --needed xdg-desktop-portal xdg-desktop-portal-kde obs-studio
 yay -Sy --needed gphoto2  
 
 # CLI tools
-yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx wireguard-tools traceroute unzip cpanminus dnsmasq lxd vagrant
+yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx wireguard-tools traceroute unzip cpanminus dnsmasq lxd vagrant clang ansible
 
 # GUI Programms
-yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate inkscape kget ktorrent gwenview krdc virt-manager qemu-desktop
+yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate inkscape kget ktorrent gwenview krdc virt-manager qemu-desktop musescore etcher-bin darktable
 
 # Remote desktop
 yay -Sy --needed libvncserver libssh freerdp keditbookmarks
@@ -60,6 +63,8 @@ sudo localedef -i de_DE -f UTF-8 en_DE.UTF-8
 
 # change user shell to fish
 sudo chsh -s /usr/bin/fish omikron
+
+sudo usermod -a -G uucp omikron
 
 # Virt-Manager
 sudo systemctl enable libvirtd.service
