@@ -74,6 +74,10 @@ echo "unix_sock_group = 'libvirt'" | sudo tee -a /etc/libvirt/libvirtd.conf
 echo "unix_sock_rw_perms = '0770'" | sudo tee -a /etc/libvirt/libvirtd.conf
 echo "user = \"omikron\"" | sudo tee -a /etc/libvirt/qemu.conf
 echo "group = \"omikron\"" | sudo tee -a /etc/libvirt/qemu.conf
+echo "memory_backing_dir = \"/dev/shm\"" | sudo tee -a /etc/libvirt/qemu.conf
+
+# Let omikron use virtualization without password
+sudo cp 80-libvirt.rules /etc/polkit-1/rules.d/80-libvirt.rules
 
 # LXD
 sudo systemctl enable lxd.service
