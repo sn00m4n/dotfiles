@@ -36,7 +36,7 @@ yay -Sy --needed xdg-desktop-portal xdg-desktop-portal-kde obs-studio
 yay -Sy --needed gphoto2  
 
 # CLI tools
-yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx wireguard-tools traceroute unzip cpanminus dnsmasq lxd vagrant clang ansible cups thefuck
+yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx wireguard-tools traceroute unzip cpanminus dnsmasq lxd vagrant clang ansible cups thefuck vagrant
 
 # GUI Programms
 yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate inkscape kget ktorrent gwenview krdc virt-manager qemu-desktop musescore etcher-bin darktable kile cups system-config-printer
@@ -51,7 +51,10 @@ yay -Sy --needed gparted dosfstools jfsutils f2fs-tools mtools gpart nilfs-utils
 yay -Sy --needed kicad kicad-library kicad-library-3d pcbdraw freecad
 
 # Messenger 
-yay -Sy --needed schildichat-desktop-bin telegram-desktop
+yay -Sy --needed schildichat-desktop-bin telegram-desktop element-desktop
+
+# Pentesting
+yay -Syu --needed nmap gobuster-bin massscan metasploit
 
 # IDEs
 yay -S --needed goland pycharm-professional intellij-idea-ultimate-edition code goland-jre intellij-idea-ultimate-edition-jre clion clion-lldb clion-gdb clion-jre
@@ -85,3 +88,6 @@ sudo systemctl start lxd.service
 sudo lxd init
 sudo usermod -a -G lxd omikron
 sudo lxc profile set default security.secureboot=false
+
+# Vagrant
+vagrant plugin install vagrant-libvirt
