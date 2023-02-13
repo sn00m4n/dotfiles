@@ -12,7 +12,7 @@ cd yay && makepkg -si
 cd -
 
 # Programming Languages
-yay -Sy --needed go gopls go-tools jdk-openjdk jre-openjdk rustup nodejs npm
+yay -Sy --needed go gopls go-tools jdk-openjdk jre-openjdk rustup nodejs npm mold
 
 # Rust
 cargo install wasm-pack
