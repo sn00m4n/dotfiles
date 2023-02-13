@@ -26,6 +26,9 @@ yay -Sy --needed dlang
 # Python
 yay -Sy --needed python python-pip
 
+# Node
+sudo npm install -g yarn prettier
+
 # Libraries
 yay -Sy --needed fmt qt5-imageformats kimageformats kamera noto-fonts-cjk mariadb-client nfs-utils
 
