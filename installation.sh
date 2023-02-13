@@ -36,7 +36,7 @@ yay -Sy --needed xdg-desktop-portal xdg-desktop-portal-kde obs-studio
 yay -Sy --needed gphoto2  
 
 # CLI tools
-yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx wireguard-tools traceroute unzip cpanminus dnsmasq lxd vagrant clang ansible cups
+yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx wireguard-tools traceroute unzip cpanminus dnsmasq lxd vagrant clang ansible cups thefuck
 
 # GUI Programms
 yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate inkscape kget ktorrent gwenview krdc virt-manager qemu-desktop musescore etcher-bin darktable kile cups system-config-printer
@@ -54,7 +54,7 @@ yay -Sy --needed kicad kicad-library kicad-library-3d pcbdraw freecad
 yay -Sy --needed schildichat-desktop-bin telegram-desktop
 
 # IDEs
-yay -S --needed goland pycharm-professional intellij-idea-ultimate-edition code goland-jre intellij-idea-ultimate-edition-jre
+yay -S --needed goland pycharm-professional intellij-idea-ultimate-edition code goland-jre intellij-idea-ultimate-edition-jre clion clion-lldb clion-gdb clion-jre
 
 # Locales
 sudo echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen
