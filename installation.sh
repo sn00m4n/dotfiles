@@ -42,7 +42,7 @@ yay -Sy --needed gphoto2
 yay -Sy --needed fish neovim neovim-plug tor rsync man thefuck openconnect texlive-most xorg-fonts ssss screen nginx wireguard-tools traceroute unzip cpanminus dnsmasq lxd vagrant clang ansible cups thefuck vagrant
 
 # GUI Programms
-yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate inkscape kget ktorrent gwenview krdc virt-manager qemu-desktop musescore etcher-bin darktable kile cups system-config-printer chromium calibre
+yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launcher okular spectacle libreoffice-fresh obsidian elisa gimp kcalc kate inkscape kget ktorrent gwenview krdc virt-manager qemu-desktop musescore etcher-bin darktable kile cups system-config-printer chromium calibre brave-bin
 
 # Remote desktop
 yay -Sy --needed libvncserver libssh freerdp keditbookmarks
@@ -51,7 +51,7 @@ yay -Sy --needed libvncserver libssh freerdp keditbookmarks
 yay -Sy --needed gparted dosfstools jfsutils f2fs-tools mtools gpart nilfs-utils xfsprogs udftools ntfs-3g reiserfsprogs exfatprogs btrfs-progs p7zip unrar unarchiver lzop lrzip arj
 
 # CAD
-yay -Sy --needed kicad kicad-library kicad-library-3d pcbdraw freecad
+yay -Sy --needed kicad kicad-library kicad-library-3d pcbdraw freecad blender
 
 # Messenger 
 yay -Sy --needed schildichat-desktop-bin telegram-desktop element-desktop
@@ -60,7 +60,7 @@ yay -Sy --needed schildichat-desktop-bin telegram-desktop element-desktop
 yay -Syu --needed nmap gobuster-bin massscan metasploit
 
 # IDEs
-yay -S --needed goland pycharm-professional intellij-idea-ultimate-edition code goland-jre intellij-idea-ultimate-edition-jre clion clion-lldb clion-gdb clion-jre
+yay -S --needed goland pycharm-professional intellij-idea-ultimate-edition code goland-jre intellij-idea-ultimate-edition-jre clion clion-lldb clion-gdb clion-jr webstorm webstorm-jree
 
 # Locales
 sudo echo "de_DE.UTF-8 UTF-8" >> /etc/locale.gen
