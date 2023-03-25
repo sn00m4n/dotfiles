@@ -48,7 +48,7 @@ yay -Sy --needed firefox thunderbird keepassxc nextcloud-client torbrowser-launc
 yay -Sy --needed libvncserver libssh freerdp keditbookmarks
 
 # FS tools
-yay -Sy --needed gparted dosfstools jfsutils f2fs-tools mtools gpart nilfs-utils xfsprogs udftools ntfs-3g reiserfsprogs exfatprogs btrfs-progs
+yay -Sy --needed gparted dosfstools jfsutils f2fs-tools mtools gpart nilfs-utils xfsprogs udftools ntfs-3g reiserfsprogs exfatprogs btrfs-progs p7zip unrar unarchiver lzop lrzip arj
 
 # CAD
 yay -Sy --needed kicad kicad-library kicad-library-3d pcbdraw freecad
