@@ -70,12 +70,6 @@ echo "memory_backing_dir = \"/dev/shm\"" | sudo tee -a /etc/libvirt/qemu.conf
 # Let ally use virtualization without password
 sudo cp 80-libvirt.rules /etc/polkit-1/rules.d/80-libvirt.rules
 
-# LXD
-sudo systemctl enable lxd.service
-sudo systemctl start lxd.service
-sudo lxd init
-sudo usermod -a -G lxd ally
-sudo lxc profile set default security.secureboot=false
 
 # Vagrant
 vagrant plugin install vagrant-libvirt
